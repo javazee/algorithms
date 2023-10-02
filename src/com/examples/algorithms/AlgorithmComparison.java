@@ -2,6 +2,7 @@ package com.examples.algorithms;
 
 import com.examples.algorithms.bubble.BubbleSort;
 import com.examples.algorithms.insertion.InsertionSort;
+import com.examples.algorithms.selection.SelectionSort;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -18,9 +19,12 @@ public class AlgorithmComparison {
         InsertionSort<Integer> insertionSort = new InsertionSort<>("Insertion sorting");
         insertionSort.doSorting(arrayBeforeSorting.clone());
 
+        SelectionSort<Integer> selectionSort = new SelectionSort<>("Selection Sort");
+        selectionSort.doSorting(arrayBeforeSorting.clone());
+
     }
 
     private static Integer[] generateArray() {
-        return new Random(1000000).ints().limit(1000).boxed().toList().toArray(new Integer[0]);
+        return new Random(0).ints().limit(1000).boxed().toList().toArray(new Integer[0]);
     }
 }

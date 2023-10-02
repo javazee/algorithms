@@ -7,7 +7,6 @@ public class InsertionSort<T extends Comparable<T>> extends Sort<T> {
         super(name);
     }
 
-    //66 89 44 3 5 77
     @Override
     protected void sort(T[] array) {
         for (int i = 0; i < array.length; i ++) {
