@@ -2,6 +2,7 @@ package com.examples.algorithms;
 
 import com.examples.algorithms.bubble.BubbleSort;
 import com.examples.algorithms.insertion.InsertionSort;
+import com.examples.algorithms.merge.MergeSort;
 import com.examples.algorithms.selection.SelectionSort;
 
 import java.util.Arrays;
@@ -19,8 +20,11 @@ public class AlgorithmComparison {
         InsertionSort<Integer> insertionSort = new InsertionSort<>("Insertion sorting");
         insertionSort.doSorting(arrayBeforeSorting.clone());
 
-        SelectionSort<Integer> selectionSort = new SelectionSort<>("Selection Sort");
+        SelectionSort<Integer> selectionSort = new SelectionSort<>("Selection Sorting");
         selectionSort.doSorting(arrayBeforeSorting.clone());
+
+        MergeSort<Integer> mergeSorting = new MergeSort<>("Merge sorting");
+        mergeSorting.doSorting(arrayBeforeSorting.clone());
 
     }
 
