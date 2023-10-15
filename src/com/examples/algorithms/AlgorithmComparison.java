@@ -3,6 +3,7 @@ package com.examples.algorithms;
 import com.examples.algorithms.bubble.BubbleSort;
 import com.examples.algorithms.insertion.InsertionSort;
 import com.examples.algorithms.merge.MergeSort;
+import com.examples.algorithms.quick.QuickSort;
 import com.examples.algorithms.selection.SelectionSort;
 
 import java.util.Arrays;
@@ -25,6 +26,9 @@ public class AlgorithmComparison {
 
         MergeSort<Integer> mergeSorting = new MergeSort<>("Merge sorting");
         mergeSorting.doSorting(arrayBeforeSorting.clone());
+
+        QuickSort<Integer> quickSorting = new QuickSort<>("Quick sorting");
+        quickSorting.doSorting(arrayBeforeSorting.clone());
 
     }
 
